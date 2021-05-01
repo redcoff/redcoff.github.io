@@ -57,34 +57,36 @@ nav .fas{
 .banner {
     width: 100%;
     top: 25%;
-    left: 130px;
     position: absolute;
     color: #000000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
 }
 
 .banner .main h1 {
     font-size: 61px;
     width: 100%;
     position: relative;
-    margin-left: 40px;
 }
 
 .banner .main p {
     width: 100%;
     font-size: 15px;
-    margin: 30px 0 30px 40px;
+    margin: 30px 0 30px 0;
     line-height: 25px;
     color: #b2b1b1;
 }
 
 .banner .main {
-    float: left;
-    width: 50%;
+    width: 35%;
 }
 
 .pic {
-    width: 50%;
+    width: 35%;
     float: right;
+    text-align: center;
 }
 
 .pic img {
@@ -271,6 +273,7 @@ footer p {
         position: absolute;
         left: 0;
         text-align: center;
+        flex-wrap: wrap;
     }
 
     .banner .main h1 {
@@ -288,6 +291,10 @@ footer p {
 
     .nav-link ul li a {
         display: flex;
+    }
+
+    .main-btn{
+        margin-left: 0;
     }
 
     .nav-link {
@@ -319,23 +326,19 @@ footer p {
     }
 
     .timeline-item {
-        align-self: baseline !important;
-        width: 100%;
-        padding: 0 30px 150px 20px;
+        align-self: baseline;
+        width: 90%;
+        padding: 0 0 150px 0;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .timeline-item:before {
         left: 0;
-        padding-left: 20px;
         top: -10px;
         text-align: left;
         width: 100%;
-        border: none !important;
-    }
-
-    .timeline-container{
-        padding-left: 20px;
-        padding-right: 20px;
+        border: none;
     }
 
     .timeline-item:last-child {
