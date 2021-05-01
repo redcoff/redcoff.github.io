@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timeline hry</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+          integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+          crossorigin="anonymous"/>
+</head>
+<body>
+<section>
+    <nav>
+        <div class="nav-link" id="navLink">
+            <i class="fas fa-times" onclick="hideMenu()"></i>
+            <ul>
+                <li>
+                    <a href="index.html">Úvod</a>
+                </li>
+                <li>
+                    <a href="game.html">Hra</a>
+                </li>
+                <li>
+                    <a href="timeline.html">Timeline hry a zajimavosti</a>
+                </li>
+                <li>
+                    <a href="resources.html">Zdroje</a>
+                </li>
+            </ul>
+        </div>
+        <i class="fas fa-bars" onclick="showMenu()"></i>
+        <h3>Timeline hry</h3>
+    </nav>
+</section>
+
+<div class="timeline-container" id="timeline-1">
+    <div class="timeline-header">
+        <h2 class="timeline-header-title">Jak se Markovi (ne)dařilo?</h2>
+        <h3 class="timeline-header-subtitle">Pojďme se na to podívat podrobně.</h3>
+    </div>
+
+    <div class="timeline">
+        <div class="timeline-item" data-text="1. Kapitola: Marek v baru">
+            <div class="timeline-content">
+                <img src="./imgs/pub.png" alt="Marek v baru na začátku hry"/>
+
+                <p>
+                    Marek šel do baru si na chvíli posedět se svým kamarádem
+                    Liborem. Slíbil i své manželce Petře, že příjde brzy. Bohužel
+                    jak to zvykem bývá, někdy se stane, že první pivo není ani to poslední
+                    a Marek se zdržel až do tří rána. <b>Přitom zaplatil 2000 korun</b>. Docela velká částka
+                    na krátké posezení, ne?
+                </p>
+            </div>
+        </div>
+        <div class="timeline-item" data-text="2. Kapitola: Tvorba měsíčního rozpočtu">
+            <div class="timeline-content">
+                <img src="./imgs/budget.png"
+                     alt="Papír s měsíčním rozpočtem"/>
+
+                <p>
+                    Petra domluví Markovi, ať sestaví <b>měsíční rodinný rozpočet</b>. Rodinný rozpočet
+                    je důležitý pro to, abychom měli přehled o našich financích. Taktéž je důležité,
+                    abychom sestavili ,,zdravý" rozpočet, tedy takový, se kterým si budeme jistí, že
+                    <b>zaplatíme vše potřebné, máme odložené peníze bokem i pro naši zábavu.</b>
+                </p>
+            </div>
+        </div>
+        <div class="timeline-item" data-text="3. Kapitola: Marek je vyhozen z práce">
+            <div class="timeline-content">
+                <img src="./assets/GFX/Background/továrna_boom.png" alt="Výbuch továrny"/>
+                <p>
+                    V životě se mohou stát jakékoliv nečekané situace. A samozřejmě nás to bude stát peníze.
+                    Může se rozbít domácí spotřebič důležitý k chodu našeho života. Budeme potřebovat rovnátka <i>(Na
+                    začátku hry Petra mluví o zaplacení rovnátek)</i>.
+                    Budeme potřebovat nové brýle <i>(Šimon po dalším dni dostal brýle)</i>. Může to být i vyhození z práce.
+                    Co ale má člověk dělat, když jeho rodina nějak funguje a spoléhají na to, že rodinu uživí?
+                    To narušuje jejich rozpočet. Pokud něco narušuje rozpočet, nemají kontrolu nad svýma financema.
+                    <br>
+                    Důležitým faktem této části je, že Marek si půjde hledat novou práci přes pracovní úřad. <b>Takový
+                    úřad dává lidem peníze, aby mohli z čeho vyžít.</b> Částka peněz se odvíjí na minulém zaměstnání a době,
+                    kdy
+                    jsou bez práce. <b>Ve hře dostává Marek 14 000 Kč, ale těmito penězi splácí svou škodu, kterou provedl
+                    ve svém
+                    bývalém zaměstnání.</b> Markovi tedy žádné peníze navíc nezbývají a rodina musí vyžít pouze z jednoho
+                    platu.
+                </p>
+            </div>
+        </div>
+        <div class="timeline-item" data-text="4. Kapitola: Zaplacení výdajů">
+            <div class="timeline-content">
+                <p>
+                    Uběhl měsíc a Marek je bez práce. Z minulého měsíce si Petra ušetřila 4 000 Kč, zatímco Marek vše utratil.
+                    Marek se nemůže řídit podle rodinného rozpočtu, který si dříve sestavil, protože na to nemá dostatek peněz.
+                    Zaplatí nejprve nájem, energie a služby, jídlo a pak si nějak roztřídí zbytek peněz do ostatních výdajů nebo
+                    ušetří na další měsíc.
+                </p>
+            </div>
+        </div>
+        <div class="timeline-item" data-text="5. Kapitola: Půjčka">
+            <div class="timeline-content">
+                <img src="./imgs/loans.png" alt="Obrazovka s půjčkami"/>
+                <p>
+                    Další měsíc Marek nemá peníze na to, aby zaplatil výdaje. Rozhodne se, že si peníze půjčí. Zadá do
+                    vyhledávače výraz ,,Chci půjčku" a nabízí se mu dvě společnosti:
+                </p><br>
+                <ul>
+                    <li><b>BezPoplatkuALevne.cz:</b> Nebankovní společnost, která říká, že nabízí nejlepší půjčky a bez poplatku.
+                    Pozorně si jejich stránky pročtěte, můžete narazit na solidní argumenty, proč je půjčka u nich nejlepší. <a href="./assets/GFX/Environment/WebPages/BezPoplatkuALevnePage.png">Obrázek webových stránek</a></li>
+                    <li><b>AlfaBetaGamma.cz:</b> Bankovní společnost, která klade důraz na bezpečnost zákazníka, tedy pokud si nevíte rady,
+                        raději společnost kontaktujte. <a href="./assets/GFX/Environment/WebPages/Alfabeta.png">Obrázek webových stránek</a></li>
+                </ul><br>
+                <p>
+                    Když si člověk chce půjčit online, je důležité si projít stránky společnosti. Na stránkách by mělo být
+                    vše čitelné, zejména ty nejdůležitější informace, a měla by být k dispozici kalkulačka, důležité je znát
+                    hodnotu <a href="https://www.cnb.cz/cs/casto-kladene-dotazy/Co-je-ukazatel-RPSN/"> RPSN </a> (= Roční procentní sazba nákladů, je to částka všech nákladů a poplatků, chceme co nejmenší číslo).
+                    Na webové stránce chceme taky hledat všechny dokumenty, které s půjčkou souvisí, tedy výpis poplatků a smlouvu o půjčce.
+                    Tyto dokumenty musí obsahovat všechny veškeré informace a když si to nastudujete, pak jste při výběru půjčky neprůstřelní.
+                </p><br>
+                <p>
+                    Když si chceme půjčit velké množství peněz, např. na bydlení, nové auto, rekonstrukci apod., většinou si chceme půjčit od bankovní společnosti.
+                    u těchto společností je to sice bezpečnější, ale pomalý proces. A taky ne vždy bankovní společnost opravdu ty peníze půjčí. Právě v případě Marka,
+                    společnost mu půjčku zamítla, protože byl nezaměstnaný, a tak nebylo zaručené, že by dokázal půjčku splatit.
+                    Nebankovní půjčky jsou dobré pro rychlé vyřešení problémů. Ne všechny nebankovní půjčky jsou špatné jako ve hře, některé jsou dokonce
+                    výhodnější než bankovní. Je ale důležité si opravdu zjistit všechny informace.
+                </p>
+                <br>
+                <h3>A jakou půjčku si to vlastně vybral?</h3>
+                <ul>
+                    <li><b>Marek požádal o půjčku v hodnotě 20 000 Kč.</b></li>
+                    <li><b> <a href="https://www.banky.cz/bankovni-slovnik/urokova-sazba/"> Úroková sazba </a> je 140 % p.a (ročně).</b><i>(Úroková sazba zvyšuje objem půjčených peněz, chceme to nejmenší číslo).</i></li>
+                    <li><b> Půjčil si to na 3 měsíce.</b></li>
+                    <li><b> Měsíční splátka je 8 279 Kč.</b></li>
+                    <li><b> Jsou zde poplatky:</b>
+                        <ul>
+                            <li>Poplatek za uzavření smlouvy: 2 000 Kč</li>
+                            <li>Poplatek za ukončení smlouvy: 1 000 Kč</li>
+                            <li>Poplatek za pozdní splátku: 200 Kč za den</li>
+                            <li>Poplatek za upozornění o pozdní splátce: 200 Kč za den</li>
+                            <li>Poplatek za zaslání dopisu o zesplatnění: 300 Kč</li>
+                            <li>Poplatek za poplatky :-) : 100 Kč </li>
+                        </ul>
+                    </li>
+                    <li> <b>RPSN je kolem 797,3 %.</b> <i>Některé reálné nebankovní společnosti nabízí RPSN i nad 1 000 % i dokonce nad 10 000 %. Takovéto půjčky rozhodně nechceme.</i></li>
+                    <li> <b>Kdyby splácel včas, zaplatil by na konci 27 837 Kč.</b> To je tedy o 7 837 Kč víc, než si půjčil.</li>
+                </ul>
+                <p>O tom, proč zaplatil další měsíc o dost více, se podíváme v další kapitole (a jistě to souvisí s poplatkami).</p>
+            </div>
+        </div>
+
+        <div class="timeline-item" data-text="6. a 7. Kapitola: Zaplacení výdajů a první splátky půjčky">
+            <div>
+                <p>
+                    Marek si po dalším měsíci našel práci, ale za méně peněz, než měl v minulém zaměstnání. Každopádně jeho výplata
+                    mu dochází až 3 dny po termínu zaplacení výdajů. Marek se rozhodne, že nejprve klasické výdaje a se splácením
+                    půjčky počká, až mu dojde výplata. <b>Tohle rozhodntí Marka je nezodpovědné. Splátky chceme vždy splácet včas.</b>
+                    Vidí tedy, že má nejprve zaplatit splátku v hodnotě 8 279 Kč.
+                </p><br>
+                <p>
+                    Po třech dnech tam ale vidí jiné číslo, a to <b>11 226 Kč</b>. Tato hodnota se vypočítala jako:</p>
+                <ul>
+                    <li>Hodnota splátky: 8 279 Kč +</li>
+                    <li>Poplatek za pozdní splátku (krát tři dny): 3 * 200 Kč +</li>
+                    <li>Poplatek za upozornění pozdní splátky (krát tři dny): 3 * 200 Kč +</li>
+                    <li>Poplatek za uzavření smlouvy: 2 000 Kč = 11 479 Kč.</li>
+                </ul>
+            </div>
+        </div>
+        <div class="timeline-item" data-text="8. a 9. Kapitola: Zaplacení výdajů a dopis o zesplatnění">
+            <div>
+                <p>
+                    Další měsíc se klasicky platí výdaje a bohužel podle Markovi taktiky, kdy dluh zaplatí, až mu dojde výplata. Jenže se mu
+                    výplata zpozdila a je to už týden, co ji nezískal. To už je problém. Protože je to dlouho, co dluh nezaplatil, dojde
+                    mu dopis o zesplatnění. Zesplatnění je právo věřitele (tomu, od koho jsme si půjčili) požadovat po dlužníkovi (my, kteří jsme si půjčili), aby okamžitě vrátil všechny peníze, které dluží, a to včetně
+                    úroků, pokut a poplatků.
+                </p><br>
+                <p><b>V reálném životě dopis o zesplatnění dochází po 1 až 3 měsíci (záleží na smlouvě) neplacení. V této situaci přichází i chvíle, kdy by měl člověk požádat o pomoc odborníka.
+                    Pokud dlužník dluh nesplatí do stanoveného termínu, je žalován u soudu.</b>
+                </p><br>
+                <p>
+                    Marek má zaplatit do tří dnů celkovou částku 31 037 Kč. Tato částka je vypočítaná jako:
+                </p>
+                <ul>
+                    <li>Hodnota splátky: 8 279 Kč +</li>
+                    <li>Poplatek za pozdní splátku (krát tři dny): 3 * 200 Kč +</li>
+                    <li>Poplatek za upozornění pozdní splátky (krát tři dny): 3 * 200 Kč +</li>
+                    <li>Poplatek za uzavření smlouvy: 2 000 Kč = 11 479 Kč.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    const navLink = document.getElementById('navLink');
+    function showMenu(){
+        navLink.style.left = "0"
+    }
+
+    function hideMenu(){
+        navLink.style.left = "-200px";
+    }
+
+</script>
+
+<footer>
+    <p>Anna Vičíková, 2021</p>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script>
+
+    (function ($) {
+        $.fn.timeline = function () {
+            const selectors = {
+                id: $(this),
+                item: $(this).find(".timeline-item"),
+                activeClass: "timeline-item--active",
+                img: ".timeline img"
+            };
+            selectors.item.eq(0).addClass(selectors.activeClass);
+            selectors.id.css(
+                "background-image",
+                "url(" +
+                selectors.item
+                    .first()
+                    .find(selectors.img)
+                    .attr("src") +
+                ")"
+            );
+            const itemLength = selectors.item.length;
+            $(window).scroll(function () {
+                let max, min;
+                const pos = $(this).scrollTop();
+                selectors.item.each(function (i) {
+                    min = $(this).offset().top;
+                    max = $(this).height() + $(this).offset().top;
+                    if (i === itemLength - 2 && pos > min + $(this).height() / 2) {
+                        selectors.item.removeClass(selectors.activeClass);
+                        selectors.id.css(
+                            "background-image",
+                            "url(" +
+                            selectors.item
+                                .last()
+                                .find(selectors.img)
+                                .attr("src") +
+                            ")"
+                        );
+                        selectors.item.last().addClass(selectors.activeClass);
+                    } else if (pos <= max - 40 && pos >= min) {
+                        selectors.id.css(
+                            "background-image",
+                            "url(" +
+                            $(this)
+                                .find(selectors.img)
+                                .attr("src") +
+                            ")"
+                        );
+                        selectors.item.removeClass(selectors.activeClass);
+                        $(this).addClass(selectors.activeClass);
+                    }
+                });
+            });
+        };
+    })(jQuery);
+
+    $("#timeline-1").timeline();
+
+</script>
+</body>
+</html>
