@@ -15,35 +15,44 @@
 <section class="header">
     <nav>
         <div class="nav-link" id="navLink">
-            <i class="fas fa-times" onclick="hideMenu()"></i>
+            <i class="fas fa-bars" id="burgeri" onclick="showMenu()"></i>
+            <i class="fas fa-times" id="crossi" onclick="hideMenu()"></i>
             <ul>
                 <li>
-                    <a href="index.html">Úvod</a>
+                    <a id="index" href="index.html">Úvod</a>
                 </li>
                 <li>
-                    <a href="game.html">Hra</a>
+                    <a id="game" href="game.html">Hra</a>
                 </li>
                 <li>
-                    <a href="timeline.html">Timeline hry a zajimavosti</a>
+                    <a id="timeline" href="timeline.html">Timeline hry a zajimavosti</a>
                 </li>
                 <li>
-                    <a href="resources.html">Zdroje</a>
+                    <a id="resources" href="resources.html">Zdroje</a>
                 </li>
             </ul>
         </div>
-        <i class="fas fa-bars" onclick="showMenu()"></i>
-        <h3>Úvod</h3>
+        <h3 id="nav-header-name">Úvod</h3>
     </nav>
 </section>
 
 <script>
     var navLink = document.getElementById('navLink');
+    var burgerIcon = document.getElementById('burgeri');
+    var namePage = document.getElementById('nav-header-name');
+    var crossIcon = document.getElementById('crossi');
     function showMenu(){
-        navLink.style.left = "0"
+        navLink.classList.add('nav-link-activated');
+        burgerIcon.style.display = "none";
+        namePage.classList.add('nav-header-name-activated');
+        crossIcon.style.display = 'block';
     }
 
     function hideMenu(){
-        navLink.style.left = "-200px";
+        navLink.classList.remove('nav-link-activated');
+        burgerIcon.style.display = "block";
+        namePage.classList.remove('nav-header-name-activated');
+        crossIcon.style.display = 'none';
     }
 
 </script>
@@ -65,10 +74,6 @@
         <img src="./assets/GFX/Items/Execution/toy_exe.png" alt="Plyšák s exekuční páskou">
     </div>
 </div>
-
-<footer>
-    <p>Anna Vičíková, 2021</p>
-</footer>
 
 </body>
 </html>

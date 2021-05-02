@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zdroje</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+          integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+          crossorigin="anonymous"/>
+</head>
+<body>
+<section class="header">
+    <nav>
+        <div class="nav-link" id="navLink">
+            <i class="fas fa-bars" id="burgeri" onclick="showMenu()"></i>
+            <i class="fas fa-times" id="crossi" onclick="hideMenu()"></i>
+            <ul>
+                <li>
+                    <a href="index.html">Úvod</a>
+                </li>
+                <li>
+                    <a href="game.html">Hra</a>
+                </li>
+                <li>
+                    <a href="timeline.html">Timeline hry a zajimavosti</a>
+                </li>
+                <li>
+                    <a href="">Zdroje</a>
+                </li>
+            </ul>
+        </div>
+        <h3 id="nav-header-name">Zdroje</h3>
+    </nav>
+</section>
+
+<div class="banner">
+    <div class="main">
+        <h1>Využité zdroje a poděkování</h1>
+        <h2>K vývoji hry</h2>
+        <ul>
+            <li>
+                <p>Grafické zpracování: Anna Zatloukalová</p>
+            </li>
+            <li>
+                <p>Hudba:</p>
+            </li>
+            <li>
+                <p>Zvuky:</p>
+            </li>
+            <li>
+                <p>Konzultace scénáře: Martin Kovalčík</p>
+            </li>
+            <li>
+                <p>Herní engine: Godot Engine</p>
+            </li>
+            <li>
+                <p><i>(psychická)</i> Podpora: Ing. Pavel Náplava, PhD.</p>
+            </li>
+        </ul>
+        <h2></h2>
+    </div>
+</div>
+
+<script>
+    var navLink = document.getElementById('navLink');
+    var burgerIcon = document.getElementById('burgeri');
+    var namePage = document.getElementById('nav-header-name');
+    var crossIcon = document.getElementById('crossi');
+    function showMenu(){
+        navLink.classList.add('nav-link-activated');
+        burgerIcon.style.display = "none";
+        namePage.classList.add('nav-header-name-activated');
+        crossIcon.style.display = 'block';
+    }
+
+    function hideMenu(){
+        navLink.classList.remove('nav-link-activated');
+        burgerIcon.style.display = "block";
+        namePage.classList.remove('nav-header-name-activated');
+        crossIcon.style.display = 'none';
+    }
+
+</script>
+</body>
+</html>

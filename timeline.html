@@ -12,10 +12,11 @@
           crossorigin="anonymous"/>
 </head>
 <body>
-<section>
+<section class="header">
     <nav>
         <div class="nav-link" id="navLink">
-            <i class="fas fa-times" onclick="hideMenu()"></i>
+            <i class="fas fa-bars" id="burgeri" onclick="showMenu()"></i>
+            <i class="fas fa-times" id="crossi" onclick="hideMenu()"></i>
             <ul>
                 <li>
                     <a href="index.html">Úvod</a>
@@ -31,22 +32,21 @@
                 </li>
             </ul>
         </div>
-        <i class="fas fa-bars" onclick="showMenu()"></i>
-        <h3>Timeline hry</h3>
+        <h3 id="nav-header-name">Timeline hry</h3>
     </nav>
 </section>
 
 <div class="timeline-container" id="timeline-1">
     <div class="timeline-header">
-        <h2 class="timeline-header-title">Jak se Markovi (ne)dařilo?</h2>
-        <h3 class="timeline-header-subtitle">Pojďme se na to podívat podrobně.</h3>
+        <h1>Jak se Markovi (ne)dařilo?</h1>
+        <h2>Pojďme se na to podívat podrobně.</h2><br>
+        <p>Nezapomeňte, je to stále jenom hra. Ta může dost zveličovat. Berte ho s nadsázkou.</p>
     </div>
 
     <div class="timeline">
         <div class="timeline-item" data-text="1. Kapitola: Marek v baru">
             <div class="timeline-content">
                 <img src="./imgs/pub.png" alt="Marek v baru na začátku hry"/>
-
                 <p>
                     Marek šel do baru si na chvíli posedět se svým kamarádem
                     Liborem. Slíbil i své manželce Petře, že příjde brzy. Bohužel
@@ -152,7 +152,7 @@
         </div>
 
         <div class="timeline-item" data-text="6. a 7. Kapitola: Zaplacení výdajů a první splátky půjčky">
-            <div>
+            <div class="timeline-content">
                 <p>
                     Marek si po dalším měsíci našel práci, ale za méně peněz, než měl v minulém zaměstnání. Každopádně jeho výplata
                     mu dochází až 3 dny po termínu zaplacení výdajů. Marek se rozhodne, že nejprve klasické výdaje a se splácením
@@ -170,7 +170,7 @@
             </div>
         </div>
         <div class="timeline-item" data-text="8. a 9. Kapitola: Zaplacení výdajů a dopis o zesplatnění">
-            <div>
+            <div class="timeline-content">
                 <p>
                     Další měsíc se klasicky platí výdaje a bohužel podle Markovi taktiky, kdy dluh zaplatí, až mu dojde výplata. Jenže se mu
                     výplata zpozdila a je to už týden, co ji nezískal. To už je problém. Protože je to dlouho, co dluh nezaplatil, dojde
@@ -189,26 +189,123 @@
                     <li>Poplatek za upozornění pozdní splátky (krát tři dny): 3 * 200 Kč +</li>
                     <li>Poplatek za uzavření smlouvy: 2 000 Kč = 11 479 Kč.</li>
                 </ul>
+                <p>Nyní dochází k rozhodnutí hráče. Marek se může rozhodnout, jestli půjde za věřitelem a domluví se s ním na splátkovém kalendáři, nebo vyhodí
+                dopis do koše.</p><br>
+
+                <p><b>Nikdy, nikdy, nikdy není dobrý nápad zahodit takovýto dopis do koše a ignorovat to. Musíme to řešit. Prosím, řešte to.</b></p>
+                <br>
+                <h3>Pokud Marek půjde za věřitelem</h3>
+                <p>Marek zajde za věřitelem a poprosí ho, jestli by se nemohli dohodnout na splátkovém kalendáři. Věřitel ho ale neposlouchá a pořád
+                mu nabízí nějaké úvěry. Ty Marek ale nechce, potřebuje pouze čas na zaplacení, nebo alespoň rozdělení částky na malé. Věřitel ho posílá pryč a
+                Marek je opět bezradný...</p>
+                <br>
+                <p><b>Pokud by měl Marek rozumného věřitele, tak by mu věřitel dal šanci a na splátkovém kalendáři by se dohodli.</b> To, že
+                nyní ve hře taková možnost není, neznamená, že to tak je reálně vždy. Záleží na věřiteli, jestli vás chce obrat o celý život nebo ne.</p>
+                <br>
+
+                <h3>Pokud Marek vyhodil dopis do koše</h3>
+                <p>Pokračuje se na další kapitolu. Opravdu vás prosím, nikdy se takhle ale nezachovejte.</p>
+
+
+            </div>
+        </div>
+        <div class="timeline-item" data-text="10. Kapitola: Exekuce">
+            <div class="timeline-content">
+                <img src="./imgs/execution.png" alt="Zabavené předměty"/>
+                <p>
+                    Přichází exekutor a zabavuje 6 věcí. Hráč má opět možnost rozhodnout se. Marek nemusí nic na to říkat a pokračuje se dál. Pokud
+                    ale namítne, že s těmi zabavenými věcmi není něco v pořádku, má za úkol je vybrat (a má 3 pokusy).
+                </p>
+
+                <p><b>Exekutor nemůže zabavit vše, co uvidí. Ale bohužel pokud zabaví něco, na co nemá právo, a nic mu na to neřekneme, tak se
+                    tím okrádáme sami sebe.</b> <a href="https://www.jakprezitdluhy.cz/poradna/exekuce"> Exekutor <b>nesmí</b> vzít: </a></p>
+                <ul>
+                    <li>
+                        předměty, které jsou důležité pro naše základní potřeby, např. ledničku, sporák, pračku, stůl, židle, postel,
+                    </li>
+                    <li>
+                        oblečení, zdravotní pomůcky a potřeby,
+                    </li>
+                    <li>
+                        dětské věci,
+                    </li>
+                    <li>
+                        předměty potřebné k plnění pracovní činnosti
+                    </li>
+                    <li>
+                        snubní prsteny, rodinné fotografie, dopisy,
+                    </li>
+                    <li>
+                        domácí mazlíčky,
+                    </li>
+                    <li>
+                        předměty které nevlastníte (něco koupil třeba táta, tedy vlastní to on a ne vy).
+                    </li>
+                </ul>
+
+                <p>
+                    <b>Vše ostatní může exekutor zabavit. A nejen hmotné věci, ale i nehmotné. Může zařídit, aby se vám strhávaly peníze z vašeho účtu a taky z účtu vašho manžela nebo manželky. </b>
+                </p>
+                <br>
+
+                <p>Ve hře tedy exekutor nesměl zabavit snubní prstýnky, dětského plyšáka a postel. Pokud Marek vybral správně, exekutor mu předměty nechá a odejde.</p>
+            </div>
+        </div>
+        <div class="timeline-item" data-text="11. Kapitola: Co dál? Dluhová poradna!">
+            <div class="timeline-content">
+                <p>
+                    Marek se ocitá v baru se svým kamarádem Liborem a neví, co dál. V této situaci je těžké přemýšlet optimisticky, protože se zdá, že vše se hroutí a nejde se z toho dostat ven.
+                </p><br>
+                <p>
+                    <b>V této situaci člověka napadá, že by bylo jednodušší ukončit svůj život. A není to jen kvůli tomu, že má dluhy, ale nejvíce o tom tlaku, co je kolem něj.
+                    Psychicky na něj tlačí exekutor, věřitel, soud, lidé v okolí. To ale nikdy není řešení. Musí se to řešit!</b>
+                </p><br>
+                <p>
+                    Libor řekne, že zahlédl nějaké létáčky dluhové poradny. Nabízí Marka, ať se po nějaké poohlédne. Marek se tedy vydá na internetový prohlížeč a zadá výraz ,,dluhová poradna".
+                    Zobrazí se mu dva výsledky:
+                </p>
+                <ul>
+                    <li><b>RychleALevne.cz:</b> Oddlužovací agentura, slibuje rychlé oddlužení za určité poplatky. Ceník poplatků je k dispozici až po odeslání formuláře.
+                        <a href="./assets/GFX/Environment/WebPages/Rychlealevne.png">Obrázek webových stránek</a></li>
+                    <li><b>NadejeBezDluhu.cz:</b> Nezisková dluhová poradna, zanechává na sebe kontakt všude, kde to jen jde. Píše i články ohledně dluhů a exekucí. <a href="./assets/GFX/Environment/WebPages/NadejeBezDluhu.png">Obrázek webových stránek</a></li>
+                </ul><br>
+            </div>
+        </div>
+        <div class="timeline-item" data-text="Závěr: Život bez dluhů nebo s dluhy.">
+            <div class="timeline-content">
+                <h3>Pokud si Marek vybral oddlužovací agenturu</h3>
+                <p>Nastává konec hry, kdy Marek a jeho rodina je více zadlužená. Co se stane ale potom? Nikdo neví...</p>
+                <p><b>Kdyby se něco podobného stalo v reálném životě, stále můžeme kontaktovat bezplatnou dluhovou poradnu. Vždy. I Marek v této situaci,
+                    i když se zadlužil více, má k dispozici možnost kontaktovat odborníky a nechat si pomoct.</b></p><br>
+                <h3>Pokud si Marek vybral neziskovou dluhovou poradnu</h3>
+                <p>Následuje hovor s Marií Bílou, poradkyní z neziskové organizace. Sjednávají si s Markem schůzku, na kterou Marek pak přijde i s potřebnýma materiálama.
+                Marie ho ujišťuje, že vše bude v pořádku a najdou cestu, jak z tohoto pekla ven.</p>
+                <p><b>Dluhové poradny jsou tady pro vás. V případě problémů s dluhy, nebo i jen pro radu, kontaktuje je.</b></p>
             </div>
         </div>
     </div>
 </div>
 
 <script>
-    const navLink = document.getElementById('navLink');
+    var navLink = document.getElementById('navLink');
+    var burgerIcon = document.getElementById('burgeri');
+    var namePage = document.getElementById('nav-header-name');
+    var crossIcon = document.getElementById('crossi');
     function showMenu(){
-        navLink.style.left = "0"
+        navLink.classList.add('nav-link-activated');
+        burgerIcon.style.display = "none";
+        namePage.classList.add('nav-header-name-activated');
+        crossIcon.style.display = 'block';
     }
 
     function hideMenu(){
-        navLink.style.left = "-200px";
+        navLink.classList.remove('nav-link-activated');
+        burgerIcon.style.display = "block";
+        namePage.classList.remove('nav-header-name-activated');
+        crossIcon.style.display = 'none';
     }
 
 </script>
-
-<footer>
-    <p>Anna Vičíková, 2021</p>
-</footer>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 <script>
@@ -222,15 +319,6 @@
                 img: ".timeline img"
             };
             selectors.item.eq(0).addClass(selectors.activeClass);
-            selectors.id.css(
-                "background-image",
-                "url(" +
-                selectors.item
-                    .first()
-                    .find(selectors.img)
-                    .attr("src") +
-                ")"
-            );
             const itemLength = selectors.item.length;
             $(window).scroll(function () {
                 let max, min;
@@ -238,27 +326,10 @@
                 selectors.item.each(function (i) {
                     min = $(this).offset().top;
                     max = $(this).height() + $(this).offset().top;
-                    if (i === itemLength - 2 && pos > min + $(this).height() / 2) {
+                    if (i === itemLength - 2 && (pos + 200) > min + $(this).height() / 2) {
                         selectors.item.removeClass(selectors.activeClass);
-                        selectors.id.css(
-                            "background-image",
-                            "url(" +
-                            selectors.item
-                                .last()
-                                .find(selectors.img)
-                                .attr("src") +
-                            ")"
-                        );
                         selectors.item.last().addClass(selectors.activeClass);
-                    } else if (pos <= max - 40 && pos >= min) {
-                        selectors.id.css(
-                            "background-image",
-                            "url(" +
-                            $(this)
-                                .find(selectors.img)
-                                .attr("src") +
-                            ")"
-                        );
+                    } else if (pos <= max - 40 && (pos + 200) >= min) {
                         selectors.item.removeClass(selectors.activeClass);
                         $(this).addClass(selectors.activeClass);
                     }
