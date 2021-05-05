@@ -260,6 +260,30 @@ h2 {
     margin: 10px 0 0 0;
 }
 
+.banner .main-res h1 {
+    padding-bottom: 20px;
+}
+
+.main-res {
+    padding-bottom: 5em;
+}
+
+.main-res li {
+    position: relative;
+    list-style-type: none;
+    padding-left: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.main-res ul li a{
+    text-decoration: none;
+}
+
+.main-res h2 {
+    padding-bottom: 0.5em;
+}
+
+
 @media only screen and (max-width: 800px) {
     footer {
         padding: 0;
@@ -380,5 +404,15 @@ h2 {
 
     .timeline-container {
         padding-top: 20px;
+    }
+
+    .main-res h2 {
+        font-size: 20px;
+        padding-top: 0.5em;
+    }
+
+    .main-res ul{
+        text-decoration: none;
+        text-align: left;
     }
 }
