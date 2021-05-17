@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+          integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+          crossorigin="anonymous"/>
+    <title>Historie verzí</title>
+</head>
+<body>
+<section class="header">
+    <nav>
+        <div class="nav-link" id="navLink">
+            <i class="fas fa-bars" id="burgeri" onclick="showMenu()"></i>
+            <i class="fas fa-times" id="crossi" onclick="hideMenu()"></i>
+            <ul>
+                <li>
+                    <a href="index.html">Úvod</a>
+                </li>
+                <li>
+                    <a href="game.html">Hra</a>
+                </li>
+                <li>
+                    <a href="timeline.html">Timeline hry</a>
+                </li>
+                <li>
+                    <a id="resources" href="resources.html">Zdroje</a>
+                </li>
+                <li>
+                    <a id="versions" href="versions.html">Historie verzí</a>
+                </li>
+            </ul>
+        </div>
+        <h3 id="nav-header-name">Zdroje</h3>
+    </nav>
+</section>
+
+<div class="banner">
+    <div class="main-res">
+        <h1>Historie verzí</h1>
+        <ul>
+            <li><p>10. 2. 2021: <b>0.1.0</b> <i>(začátek vývoje)</i></p></li>
+            <li><p>13. 2. 2021: <b>0.2.0</b> <i>(počáteční vývoj)</i></p></li>
+            <li><p>25. 3. 2021: <b>0.3.0</b> <i>(počáteční vývoj)</i></p></li>
+            <li><p>7. 4. 2021: <b>0.4.0</b> <i>(počáteční vývoj)</i></p></li>
+            <li><p>12. 4. 2021: <b>0.5.0</b> <i>(počáteční vývoj)</i></p></li>
+            <li><p>2. 5. 2021: <b>0.6.0</b> <i>(počáteční vývoj)</i></p></li>
+            <li><p>4. 5. 2021: <b>0.7.0</b> <i>(počáteční vývoj)</i></p></li>
+            <li><p>4. 5. 2021: <b>0.8.0</b> <i>(počáteční vývoj)</i></p></li>
+            <li><p>5. 5. 2021: <b>0.9.0</b> <i>(počáteční vývoj)</i></p></li>
+            <li><p>5. 5. 2021: <b>0.10.0</b> <i>(počáteční vývoj)</i></p></li>
+            <li><p>5. 5. 2021: <b>1.0.0</b></p>
+                <ul>
+                    <li></li>
+                    <li>
+                        Funkční verze hry.
+                    </li>
+                    <li>
+                        Hra je dohratelná.
+                    </li>
+                </ul></li>
+            <li><p>5. 5. 2021: <b>1.2.0</b></p>
+                <ul>
+                    <li></li>
+                    <li> Byly přidány některé zvukové efekty. </li>
+                    <li> Opraveny opakující se zvukové efekty. </li>
+                </ul>
+            </li>
+            <li><p>17. 5. 2021: <b>1.3.0</b></p>
+                <ul>
+                    <li></li>
+                    <li> V úvodním slovu je hráč informován o využití mezerníku. </li>
+                    <li> Upraveno zobrazování kurzoru při najetí na předmět / ikonku. </li>
+                    <li> Opraven bug, když hráč v baru klikne na peněženku místo hodin. </li>
+                </ul>
+            </li>
+        </ul>
+
+    </div>
+</div>
+
+<script>
+    var navLink = document.getElementById('navLink');
+    var burgerIcon = document.getElementById('burgeri');
+    var namePage = document.getElementById('nav-header-name');
+    var crossIcon = document.getElementById('crossi');
+    function showMenu(){
+        navLink.classList.add('nav-link-activated');
+        burgerIcon.style.display = "none";
+        namePage.classList.add('nav-header-name-activated');
+        crossIcon.style.display = 'block';
+    }
+
+    function hideMenu(){
+        navLink.classList.remove('nav-link-activated');
+        burgerIcon.style.display = "block";
+        namePage.classList.remove('nav-header-name-activated');
+        crossIcon.style.display = 'none';
+    }
+
+</script>
+</body>
+</html>
